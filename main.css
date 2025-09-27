@@ -25,3 +25,22 @@ video {
   background: #111111;
   cursor: pointer;
 }
+/* Small screen (phones < 400px wide) */
+@media (max-width: 400px) {
+  .tiles {
+    grid-template-columns: repeat(2, 100px);
+  }
+}
+
+/* Really small screen (tiny phones < 320px wide) */
+@media (max-width: 320px) {
+  .tiles {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 8px;
+  }
+
+  .tile {
+    height: 80px;         /* smaller height */
+    border-width: 3px;    /* thinner border */
+  }
+}
