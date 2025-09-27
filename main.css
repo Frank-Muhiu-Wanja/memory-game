@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.tiles {
+  margin: 48px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 16px;
+}
+.tile {
+  border: solid 5px #444444;
+  height: 100px;
+  background: #111111;
+  cursor: pointer;
+}
